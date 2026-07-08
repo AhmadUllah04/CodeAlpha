@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ahmad Ullah — Full-Stack Developer</title>
+<meta name="description" content="Portfolio of Ahmad Ullah — full-stack developer. Projects, skills, resume and contact." />
+
+<!-- Fonts: Fraunces (serif display), Inter (body), IBM Plex Mono (labels/tags) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="site-header" id="siteHeader">
+  <nav class="nav">
+    <a href="#home" class="nav__logo">AH<span class="nav__logo-dot">.</span></a>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#about" class="nav__link">About</a></li>
+      <li><a href="#skills" class="nav__link">Skills</a></li>
+      <li><a href="#projects" class="nav__link">Projects</a></li>
+      <li><a href="#resume" class="nav__link">Resume</a></li>
+      <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero__inner">
+      <p class="eyebrow">PORTFOLIO — 2026</p>
+      <h1 class="hero__name">Ahmad Ullah</h1>
+      <p class="hero__role">
+        <span id="typewriter"></span><span class="hero__cursor" aria-hidden="true">|</span>
+      </p>
+      <p class="hero__bio">
+        I build fast, accessible web products end to end — from database schema
+        to the last pixel of the interface. Currently focused on developer
+        tooling and design systems.
+      </p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">View Projects</a>
+        <a href="resume.pdf" class="btn btn--ghost" download>Download Resume</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section__head">
+      <p class="eyebrow">About</p>
+      <h2 class="section__title">A little about me</h2>
+    </div>
+
+    <div class="about">
+      <div class="about__portrait reveal" aria-hidden="true">
+        <span>AH</span>
+      </div>
+
+      <div class="about__content reveal">
+        <p>
+          I'm a full-stack developer with a soft spot for clean interfaces and
+          well-structured code. Over the years I've worked across startups and
+          product teams, shipping everything from internal admin tools to
+          public-facing apps used by thousands of people.
+        </p>
+        <p>
+          Outside of shipping features, I like writing about what I learn,
+          contributing to open-source, and mentoring newer developers.
+          I care about the details other people skip — loading states,
+          keyboard navigation, the error message nobody reads until it matters.
+        </p>
+
+        <dl class="facts">
+          <div class="facts__item">
+            <dt>Based in</dt>
+            <dd>kohat, Pakistan</dd>
+          </div>
+          <div class="facts__item">
+            <dt>Experience</dt>
+            <dd>1+ years</dd>
+          </div>
+          <div class="facts__item">
+            <dt>Focus</dt>
+            <dd>Web apps, design systems</dd>
+          </div>
+          <div class="facts__item">
+            <dt>Currently</dt>
+            <dd>Open to opportunities</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section section--tint" id="skills">
+    <div class="section__head">
+      <p class="eyebrow">Skills</p>
+      <h2 class="section__title">Tools I reach for</h2>
+    </div>
+
+    <div class="skills">
+      <div class="skills__group reveal">
+        <h3 class="skills__label">Languages</h3>
+        <ul class="tags">
+          <li class="tag">JavaScript</li>
+          <li class="tag">TypeScript</li>
+          <li class="tag">Python</li>
+          <li class="tag">SQL</li>
+          <li class="tag">HTML &amp; CSS</li>
+        </ul>
+      </div>
+
+      <div class="skills__group reveal">
+        <h3 class="skills__label">Frontend</h3>
+        <ul class="tags">
+          <li class="tag">React</li>
+          <li class="tag">Next.js</li>
+          <li class="tag">Tailwind CSS</li>
+          <li class="tag">Vite</li>
+        </ul>
+      </div>
+
+      <div class="skills__group reveal">
+        <h3 class="skills__label">Backend</h3>
+        <ul class="tags">
+          <li class="tag">Node.js</li>
+          <li class="tag">Express</li>
+          <li class="tag">PostgreSQL</li>
+          <li class="tag">REST &amp; GraphQL</li>
+        </ul>
+      </div>
+
+      <div class="skills__group reveal">
+        <h3 class="skills__label">Tools &amp; Platforms</h3>
+        <ul class="tags">
+          <li class="tag">Git</li>
+          <li class="tag">Docker</li>
+          <li class="tag">AWS</li>
+          <li class="tag">Figma</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="section__head">
+      <p class="eyebrow">Projects</p>
+      <h2 class="section__title">Selected work</h2>
+    </div>
+
+    <div class="projects">
+
+      <article class="project-card reveal">
+        <div class="project-card__thumb" style="--from:#2F5DE3; --to:#7C4DFF;">
+          <span>01</span>
+        </div>
+        <div class="project-card__body">
+          <h3 class="project-card__title">Taskflow</h3>
+          <p class="project-card__desc">
+            A collaborative task manager with real-time updates, drag-and-drop
+            boards, and team activity feeds.
+          </p>
+          <ul class="tags tags--small">
+            <li class="tag">React</li>
+            <li class="tag">Node.js</li>
+            <li class="tag">PostgreSQL</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="#" class="link-arrow">Live demo →</a>
+            <a href="#" class="link-arrow">GitHub →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card__thumb" style="--from:#0EA5A5; --to:#2F5DE3;">
+          <span>02</span>
+        </div>
+        <div class="project-card__body">
+          <h3 class="project-card__title">Ledgerly</h3>
+          <p class="project-card__desc">
+            Personal finance dashboard that visualizes spending trends and
+            forecasts monthly cash flow.
+          </p>
+          <ul class="tags tags--small">
+            <li class="tag">Next.js</li>
+            <li class="tag">TypeScript</li>
+            <li class="tag">Chart.js</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="#" class="link-arrow">Live demo →</a>
+            <a href="#" class="link-arrow">GitHub →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card__thumb" style="--from:#E36414; --to:#2F5DE3;">
+          <span>03</span>
+        </div>
+        <div class="project-card__body">
+          <h3 class="project-card__title">Componentry</h3>
+          <p class="project-card__desc">
+            An open-source design-system starter with themeable, accessible
+            React components and full docs.
+          </p>
+          <ul class="tags tags--small">
+            <li class="tag">React</li>
+            <li class="tag">Storybook</li>
+            <li class="tag">Tailwind CSS</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="#" class="link-arrow">Live demo →</a>
+            <a href="#" class="link-arrow">GitHub →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card__thumb" style="--from:#7C4DFF; --to:#E36414;">
+          <span>04</span>
+        </div>
+        <div class="project-card__body">
+          <h3 class="project-card__title">Waylight</h3>
+          <p class="project-card__desc">
+            A trip-planning app that turns a rough itinerary into a day-by-day
+            map with routes and time estimates.
+          </p>
+          <ul class="tags tags--small">
+            <li class="tag">Vue</li>
+            <li class="tag">Express</li>
+            <li class="tag">Maps API</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="#" class="link-arrow">Live demo →</a>
+            <a href="#" class="link-arrow">GitHub →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ RESUME ============ -->
+  <section class="section section--tint" id="resume">
+    <div class="section__head">
+      <p class="eyebrow">Resume</p>
+      <h2 class="section__title">Experience &amp; education</h2>
+      <a href="resume.pdf" class="btn btn--primary btn--small" download>Download PDF</a>
+    </div>
+
+    <ol class="timeline">
+      <li class="timeline__item reveal">
+        <div class="timeline__date">2023 — Present</div>
+        <h3 class="timeline__title">Senior Frontend Engineer, Nimbus Labs</h3>
+        <p class="timeline__desc">
+          Leading the design-system team; cut new feature build time by 30%
+          by standardizing shared components across four product lines.
+        </p>
+      </li>
+      <li class="timeline__item reveal">
+        <div class="timeline__date">2021 — 2023</div>
+        <h3 class="timeline__title">Full-Stack Developer, Northgate Software</h3>
+        <p class="timeline__desc">
+          Built and maintained customer-facing dashboards and internal tooling
+          for a B2B SaaS platform with 10k+ active users.
+        </p>
+      </li>
+      <li class="timeline__item reveal">
+        <div class="timeline__date">2020 — 2021</div>
+        <h3 class="timeline__title">Junior Developer, Studio Fern</h3>
+        <p class="timeline__desc">
+          Shipped marketing sites and small web apps for clients; first role
+          out of college, where I learned to care about the last 10%.
+        </p>
+      </li>
+      <li class="timeline__item reveal">
+        <div class="timeline__date">2016 — 2020</div>
+        <h3 class="timeline__title">B.Tech, Computer Science — Example University</h3>
+        <p class="timeline__desc">
+          Graduated with a focus on web systems and human-computer
+          interaction.
+        </p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="section__head">
+      <p class="eyebrow">Contact</p>
+      <h2 class="section__title">Let's work together</h2>
+    </div>
+
+    <div class="contact">
+      <div class="contact__info reveal">
+        <p class="contact__lead">
+          Have a project in mind, or just want to say hi? My inbox is open.
+        </p>
+        <ul class="contact__list">
+          <li>
+            <a href="mailto:hello@alexrivera.dev">ahmadjani9921@gmail.com</a>
+          </li>
+          <li>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">github.com/AhmadUllah</a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">linkedin.com/in/AhmadUllah</a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact__form reveal" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+          <span class="field__error" id="nameError"></span>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <span class="field__error" id="emailError"></span>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <span class="field__error" id="messageError"></span>
+        </div>
+        <button type="submit" class="btn btn--primary">Send message</button>
+        <p class="contact__status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <p>© <span id="year"></span> @2026-Ahmad. Built with HTML, CSS &amp; JavaScript.</p>
+  <a href="#home" class="back-to-top" id="backToTop">Back to top ↑</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
